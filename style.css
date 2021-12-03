@@ -1,0 +1,224 @@
+/* Code CSS du site de Claire Sabouroux */
+body {
+	font-family: Montserrat Alternates, sans-serif;
+	font-size: 18px;
+	background-color: #FDF7F8;
+	color: rgb(30, 30, 30);
+}
+
+h1{
+	font-family: Cabin Sketch, cursive;
+	font-size: 80px;
+	color: white;
+	text-shadow: 2px 2px 8px #F3AF83;
+}
+
+h2{
+	font-family: Cabin Sketch, cursive;
+	font-size: 40px;
+	color: white;
+	text-shadow: 2px 2px 8px #F3AF83;
+}
+
+h3 {
+	font-family: Amatic SC, cursive;
+	font-size: 30px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.banner{
+	background-image: url(images/banner.png);
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	color: white;
+	padding: 250px 0px;
+}
+
+.btn{
+	background-color: #BBA1B1;
+	color: white;
+	font-size: 16px;
+	border-radius: 30px;
+	margin-top: 10px;
+	margin-left: 40%;
+	padding: 10px 20px 10px 20px;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover{
+	background-color: white;
+	color: #F3AF83;
+	transform: scale(1.5);
+}
+
+.container{
+	width: 900px;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+.card-white img{
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 30px;
+}
+
+.card-white{
+	background-color: white;
+	text-align: center;
+	width: 220px;
+	padding: 24px;
+	margin-bottom: 4px;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 30px;
+}
+
+.card-white:hover{
+	transform: scale(1.05);
+}
+.card-white:hover img {
+	transform: scale(1.05);
+}
+
+.cards{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 16px;
+}
+
+table{
+  table-layout: auto;
+  height: 100px;
+  width: 900px;
+  margin: auto;
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 10px 10px 10px;
+  background-color: white;
+}
+
+th{
+	height: 40px;
+	background-color: #BBA1B1;
+	color: white;
+	text-align: center;
+	padding: 4px 4px 4px 4px;
+}
+
+td{
+	padding: 10px 10px 10px 30px;
+	text-align: left;
+}
+
+#footer{
+	background-color: #BBA1B1;
+	height: 500px;
+}
+
+.card-sign {
+    position: absolute;
+    top: 285%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 360px;
+    height: 400px;
+    border-radius: 10px;
+    background: white;
+}
+
+.card-sign .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-sign .image img {
+    width: 100%;
+    transition: .5s;
+}
+
+.card-sign:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);/*100%*/
+}
+
+.card-sign .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;/*100%*/
+    height: 100%;
+    background: #FDF7F8;
+    transition: .5s;
+    transform-origin: left;
+    border-radius: 10px;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+
+.card-sign:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+
+.card-sign .details .center {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card-sign .details .center h3 {
+    margin: 0;
+    padding: 0;
+    color: black;
+    line-height: 30px;
+    font-size: 30px;
+}
+
+.card-sign .details .center h3 span {
+    font-size: 14px;
+    color: #BBA1B1;
+}
+
+.card-sign .details .center p {
+    margin: 5px 0;
+    font-size: 15px;
+    padding: 0;
+    color: #262626;
+}
+
+.card-sign .details .center ul {
+    margin: 10px auto 0;
+    padding: 0;
+    display: table;
+}
+
+.card-sign .details .center ul li {
+    list-style: none;
+    margin: 0 5px;
+    float: left;
+}
+
+.card-sign .details .center ul li a {
+    display: block;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transform: .5s;
+    border-radius: 30px;
+}
+
+.card-sign .details .center ul li a:hover {
+    background: #F3AF83;
+}
